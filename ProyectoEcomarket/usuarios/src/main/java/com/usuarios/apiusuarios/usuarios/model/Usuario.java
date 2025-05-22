@@ -1,21 +1,31 @@
 package com.usuarios.apiusuarios.usuarios.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "usuarios")
 public class Usuario {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String nombre;
     private String email;
-    private String contraseña;
+
+    @Column(name = "contrasena") // mejor no usar "ñ" en nombres de columnas
+    private String contrasena;
+
     private int edad;
 
     public Usuario() {
     }
 
-    public Usuario(int id, String nombre, String email, String contraseña, int edad) {
+    public Usuario(int id, String nombre, String email, String contrasena, int edad) {
         this.id = id;
         this.nombre = nombre;
         this.email = email;
-        this.contraseña = contraseña;
+        this.contrasena = contrasena;
         this.edad = edad;
     }
 
@@ -32,8 +42,8 @@ public class Usuario {
         return email;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasena() {
+        return contrasena;
     }
 
     public int getEdad() {
@@ -53,8 +63,8 @@ public class Usuario {
         this.email = email;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 
     public void setEdad(int edad) {

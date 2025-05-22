@@ -2,3 +2,12 @@ Se creo repositorio: https://github.com/GabrielMunozGH/Ecomarket#
 Se creo rama: develop_gmunoz
 Se subio proyecto Ecomarket
 
+Se clono repositorio desde main 
+Se creo la rama: develop_gmunoz_
+Se agrego modificacion al proyecto Ecomarket para la conexion a base de datos MYSQL en Laragon
+Se realiza prueba de conexion
+Se realiza commit a develop_gmunoz_
+Se realiza public branch a develop_gmunoz_
+Se realiza push 
+Se realiza compare and pull request
+Se hace merge pull request
