@@ -1,0 +1,12 @@
+Se creo repositorio: https://github.com/GabrielMunozGH/Ecomarket#
+Se creo rama: develop_kpinochet
+Se clono repositorio desde main 
+Se creo la rama: develop_kpinochet
+Se agrego modificacion al proyecto Ecomarket para la conexion a base de datos MYSQL en Laragon
+Se realizo creacion de nueva API "Soporte"
+Se realiza prueba de conexion
+Se realiza commit a develop_kpinochet
+Se realiza public branch a develop_kpinochet
+Se realiza push 
+Se realiza compare and pull request
+Se hace merge pull request
