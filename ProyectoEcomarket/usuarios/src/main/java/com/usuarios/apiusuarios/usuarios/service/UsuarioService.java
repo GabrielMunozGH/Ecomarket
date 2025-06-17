@@ -3,7 +3,10 @@ package com.usuarios.apiusuarios.usuarios.service;
 import com.usuarios.apiusuarios.usuarios.model.Usuario;
 import com.usuarios.apiusuarios.usuarios.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 import java.util.Optional;
@@ -35,4 +38,12 @@ public class UsuarioService {
         usuarioRepository.deleteById(id);
         return "Usuario eliminado correctamente";
     }
+    public Optional<Usuario> loginUsuario(String email, String contrasena) {
+        return usuarioRepository.findByEmailAndContrasena(email, contrasena);
+    }
+    public Optional<Usuario> buscarPorEmail(String email) {
+        return usuarioRepository.findByEmail(email);
+    }
+
+
 }
